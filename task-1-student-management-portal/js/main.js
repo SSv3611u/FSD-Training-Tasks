@@ -1,18 +1,3 @@
-const html = document.documentElement;
-const savedTheme = localStorage.getItem("studentPortalTheme");
-
-if (savedTheme) {
-  html.setAttribute("data-bs-theme", savedTheme);
-}
-
-document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
-  button.addEventListener("click", () => {
-    const nextTheme = html.getAttribute("data-bs-theme") === "dark" ? "light" : "dark";
-    html.setAttribute("data-bs-theme", nextTheme);
-    localStorage.setItem("studentPortalTheme", nextTheme);
-  });
-});
-
 document.querySelectorAll(".needs-validation").forEach((form) => {
   form.addEventListener("submit", (event) => {
     if (!form.checkValidity()) {

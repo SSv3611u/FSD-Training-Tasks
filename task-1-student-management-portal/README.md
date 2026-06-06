@@ -4,10 +4,10 @@ Bootstrap 5 project for Task 1 in the FSD lab practice sheet.
 
 ## Pages
 
-- `index.html` - home page with navbar, hero, carousel, features, alerts, FAQ accordion, modal, and footer
+- `index.html` - home page with navbar, hero, carousel, and features
 - `registration.html` - student registration form with validation
 - `dashboard.html` - statistics cards, searchable student table, badges, and responsive layout
-- `profile.html` - student profile card and bonus student ID card
+- `profile.html` - student profile card
 - `contact.html` - contact form with success alert
 
 ## Technologies Used
