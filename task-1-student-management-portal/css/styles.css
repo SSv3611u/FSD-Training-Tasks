@@ -1,0 +1,120 @@
+:root {
+  --brand: #1d4ed8;
+  --accent: #0f766e;
+  --ink: #172033;
+  --soft: #eef4ff;
+}
+
+body {
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+.brand-mark {
+  align-items: center;
+  background: var(--brand);
+  border-radius: 8px;
+  color: #fff;
+  display: inline-flex;
+  font-weight: 800;
+  height: 36px;
+  justify-content: center;
+  margin-right: .45rem;
+  width: 36px;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--brand);
+  --bs-btn-border-color: var(--brand);
+  --bs-btn-hover-bg: #173fb3;
+  --bs-btn-hover-border-color: #173fb3;
+}
+
+.hero {
+  background-image: linear-gradient(90deg, rgba(8, 22, 52, .86), rgba(8, 22, 52, .36)), url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80");
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+  padding: 130px 0;
+}
+
+.page-header {
+  background: var(--soft);
+  padding: 64px 0 42px;
+}
+
+.feature-img,
+.profile-photo {
+  height: 210px;
+  object-fit: cover;
+}
+
+.feature-card,
+.stat-card,
+.profile-card,
+.id-card {
+  border-radius: 8px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.feature-card:hover {
+  box-shadow: 0 1rem 2rem rgba(15, 23, 42, .12);
+  transform: translateY(-4px);
+}
+
+.stat-card {
+  border-left: 5px solid var(--brand);
+}
+
+.announcement {
+  border-left: 5px solid var(--accent);
+}
+
+.id-card {
+  background: linear-gradient(135deg, #f8fbff, #eef7f5);
+}
+
+.id-photo {
+  height: 104px;
+  object-fit: cover;
+  width: 104px;
+}
+
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--brand);
+}
+
+[data-bs-theme="dark"] {
+  --ink: #eef2ff;
+  --soft: #111827;
+}
+
+[data-bs-theme="dark"] .navbar,
+[data-bs-theme="dark"] footer {
+  background: #0f172a !important;
+}
+
+[data-bs-theme="dark"] .page-header,
+[data-bs-theme="dark"] .bg-body-tertiary {
+  background: #111827 !important;
+}
+
+[data-bs-theme="dark"] .id-card {
+  background: #172033;
+}
+
+@media (max-width: 575.98px) {
+  .hero {
+    min-height: 430px;
+    padding: 95px 0;
+  }
+
+  .display-4 {
+    font-size: 2.25rem;
+  }
+}
