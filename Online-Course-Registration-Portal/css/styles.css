@@ -1,0 +1,96 @@
+:root {
+  --brand: #0f766e;
+  --ink: #13201f;
+}
+
+body {
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+.brand-mark {
+  align-items: center;
+  background: var(--brand);
+  border-radius: 6px;
+  color: #fff;
+  display: inline-flex;
+  font-size: .85rem;
+  height: 32px;
+  justify-content: center;
+  margin-right: .4rem;
+  width: 32px;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--brand);
+  --bs-btn-border-color: var(--brand);
+  --bs-btn-hover-bg: #0b5f59;
+  --bs-btn-hover-border-color: #0b5f59;
+}
+
+.hero {
+  background-image: linear-gradient(90deg, rgba(6, 28, 25, .82), rgba(6, 28, 25, .24)), url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80");
+  background-position: center;
+  background-size: cover;
+  min-height: 520px;
+  padding: 150px 0;
+}
+
+.card-img-top {
+  height: 210px;
+  object-fit: cover;
+}
+
+.course-card {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.course-card:hover {
+  box-shadow: 0 1rem 2rem rgba(15, 23, 42, .12);
+  transform: translateY(-4px);
+}
+
+.testimonial {
+  background: #fff;
+  border-left: 6px solid var(--brand);
+  border-radius: 8px;
+  font-size: 1.25rem;
+  margin: 0 auto;
+  max-width: 850px;
+  padding: 2rem;
+}
+
+.testimonial span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.map-placeholder {
+  align-items: center;
+  background: repeating-linear-gradient(45deg, #eef3f2, #eef3f2 12px, #d9e6e4 12px, #d9e6e4 24px);
+  border: 1px solid #cbd8d6;
+  border-radius: 8px;
+  display: flex;
+  font-weight: 700;
+  height: 220px;
+  justify-content: center;
+}
+
+@media (max-width: 575.98px) {
+  .hero {
+    min-height: 430px;
+    padding: 105px 0;
+  }
+
+  .testimonial {
+    font-size: 1rem;
+    padding: 1.25rem;
+  }
+}

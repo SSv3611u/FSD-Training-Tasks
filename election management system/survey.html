@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey - Society Election Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="login.html">Login</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="survey.html">Surveys</a>
+    <a href="polls.html">Polls</a>
+    <a href="candidates.html">Candidates</a>
+    <a href="results.html">Results</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>Society Survey</h1>
+    <p>Please share your feedback on the following topics.</p>
+
+    <form>
+      <h3>1. Cleanliness Satisfaction</h3>
+      <input type="radio" name="cleanliness" value="excellent"> Excellent
+      <input type="radio" name="cleanliness" value="good"> Good
+      <input type="radio" name="cleanliness" value="average"> Average
+      <input type="radio" name="cleanliness" value="poor"> Poor
+      <br><br>
+
+      <h3>2. Security Service Feedback</h3>
+      <input type="radio" name="security" value="excellent"> Excellent
+      <input type="radio" name="security" value="good"> Good
+      <input type="radio" name="security" value="average"> Average
+      <input type="radio" name="security" value="poor"> Poor
+      <br><br>
+
+      <h3>3. Parking Issues</h3>
+      <input type="checkbox" value="insufficient"> Insufficient parking space<br>
+      <input type="checkbox" value="unauthorized"> Unauthorized vehicles<br>
+      <input type="checkbox" value="visitor"> No visitor parking<br>
+      <input type="checkbox" value="damage"> Vehicle damage complaints<br>
+      <input type="checkbox" value="none"> No issues<br>
+      <br>
+
+      <h3>4. Water Supply Feedback</h3>
+      <select>
+        <option value="">-- Select --</option>
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="average">Average</option>
+        <option value="poor">Poor</option>
+      </select>
+
+      <h3>5. Maintenance Quality</h3>
+      <input type="radio" name="maintenance" value="excellent"> Excellent
+      <input type="radio" name="maintenance" value="good"> Good
+      <input type="radio" name="maintenance" value="average"> Average
+      <input type="radio" name="maintenance" value="poor"> Poor
+      <br><br>
+
+      <h3>6. Suggestions</h3>
+      <textarea rows="4" placeholder="Enter your suggestions here..."></textarea>
+
+      <button type="submit">Submit Survey</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Greenfield Society. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
