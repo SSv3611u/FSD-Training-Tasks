@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - College Event Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-calendar-alt me-2"></i>EventHub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-2">Contact Us</h1>
+            <p class="lead">Get in touch with our event management team</p>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm text-center h-100">
+                        <div class="card-body">
+                            <div class="display-6 text-primary mb-3">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Phone</h5>
+                            <p class="card-text text-muted">+91 9876543210</p>
+                            <p class="card-text text-muted small">Mon-Fri, 10 AM - 5 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm text-center h-100">
+                        <div class="card-body">
+                            <div class="display-6 text-primary mb-3">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Email</h5>
+                            <p class="card-text text-muted">events@college.edu</p>
+                            <p class="card-text text-muted small">Response within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm text-center h-100">
+                        <div class="card-body">
+                            <div class="display-6 text-primary mb-3">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Location</h5>
+                            <p class="card-text text-muted">Event Management Office</p>
+                            <p class="card-text text-muted small">Admin Block, College Campus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-5">
+                            <h3 class="card-title mb-4 fw-bold">Send us a Message</h3>
+                            
+                            <div id="contactSuccessMessage" class="alert alert-success d-none" role="alert">
+                                <i class="fas fa-check-circle me-2"></i>
+                                <strong>Message Sent Successfully!</strong> We'll get back to you soon.
+                            </div>
+
+                            <form id="contactForm" novalidate>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactName" class="form-label fw-bold">Full Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="contactName" placeholder="Your name" required>
+                                        <div class="invalid-feedback">Please provide a valid name.</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="contactEmail" class="form-label fw-bold">Email <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" id="contactEmail" placeholder="your.email@college.edu" required>
+                                        <div class="invalid-feedback">Please provide a valid email.</div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="contactSubject" class="form-label fw-bold">Subject <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="contactSubject" placeholder="What is this about?" required>
+                                    <div class="invalid-feedback">Please provide a subject.</div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="contactCategory" class="form-label fw-bold">Category</label>
+                                    <select class="form-select" id="contactCategory">
+                                        <option value="">Select a category</option>
+                                        <option value="Event Related">Event Related</option>
+                                        <option value="Registration Issue">Registration Issue</option>
+                                        <option value="Technical Support">Technical Support</option>
+                                        <option value="Suggestion">Suggestion</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="contactMessage" class="form-label fw-bold">Message <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="contactMessage" rows="5" placeholder="Please describe your message..." required></textarea>
+                                    <div class="invalid-feedback">Please provide a message.</div>
+                                </div>
+
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="contactAgree" required>
+                                    <label class="form-check-label" for="contactAgree">
+                                        I agree to be contacted regarding my inquiry
+                                    </label>
+                                </div>
+
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                                    <button type="reset" class="btn btn-secondary btn-lg">
+                                        <i class="fas fa-redo me-2"></i>Clear
+                                    </button>
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Our Location</h2>
+            <div class="row">
+                <div class="col-12">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.8226851892003!2d78.47449131533508!3d17.406496987254247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9f8b9f8b9f8b%3A0x9f8b9f8b9f8b9f8b!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coordinator Details -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Event Coordinators</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="display-6 mb-3 text-primary">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Dr. Rajesh Kumar</h5>
+                            <p class="card-text text-muted">Event Coordinator</p>
+                            <p class="card-text small">
+                                <i class="fas fa-envelope me-2"></i>rajesh.kumar@college.edu
+                            </p>
+                            <p class="card-text small">
+                                <i class="fas fa-phone me-2"></i>+91 9876543210
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="display-6 mb-3 text-primary">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Ms. Priya Sharma</h5>
+                            <p class="card-text text-muted">Assistant Coordinator</p>
+                            <p class="card-text small">
+                                <i class="fas fa-envelope me-2"></i>priya.sharma@college.edu
+                            </p>
+                            <p class="card-text small">
+                                <i class="fas fa-phone me-2"></i>+91 9876543211
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm text-center">
+                        <div class="card-body">
+                            <div class="display-6 mb-3 text-primary">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Mr. Arjun Patel</h5>
+                            <p class="card-text text-muted">Technical Support</p>
+                            <p class="card-text small">
+                                <i class="fas fa-envelope me-2"></i>arjun.patel@college.edu
+                            </p>
+                            <p class="card-text small">
+                                <i class="fas fa-phone me-2"></i>+91 9876543212
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">EventHub</h5>
+                    <p class="text-white-50">Your one-stop platform for all college events and activities.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="events.html" class="text-white-50 text-decoration-none">Events</a></li>
+                        <li><a href="gallery.html" class="text-white-50 text-decoration-none">Gallery</a></li>
+                        <li><a href="faq.html" class="text-white-50 text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Follow Us</h5>
+                    <div>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white-50 me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white-50"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-white-50">
+            <div class="text-center">
+                <p class="text-white-50 mb-0">&copy; 2024 College Event Management System. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
