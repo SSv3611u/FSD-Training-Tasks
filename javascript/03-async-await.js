@@ -1,7 +1,3 @@
-// ========================================
-// ASYNC-AWAIT - Basic Practice
-// ========================================
-
 // 1. Basic async function
 async function sayHello() {
   return "Hello from async function!";

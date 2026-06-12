@@ -1,8 +1,3 @@
-// ========================================
-// BONUS: COMBINED PRACTICE
-// ========================================
-// This file combines multiple concepts to create practical examples
-
 // Example 1: Using setTimeout with Promises
 console.log("=== Example 1: setTimeout + Promise ===");
 

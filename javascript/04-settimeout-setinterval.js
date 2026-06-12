@@ -1,9 +1,3 @@
-// ========================================
-// SETTIMEOUT & SETINTERVAL - Basic Practice
-// ========================================
-
-// ============ SETTIMEOUT ============
-
 // 1. Basic setTimeout - executes once after delay
 setTimeout(function() {
   console.log("This runs after 2 seconds");

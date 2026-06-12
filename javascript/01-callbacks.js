@@ -1,7 +1,3 @@
-// ========================================
-// CALLBACKS - Basic Practice
-// ========================================
-
 // 1. Simple Callback Example
 function greet(name, callback) {
   console.log("Hello " + name);

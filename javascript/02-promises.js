@@ -1,7 +1,3 @@
-// ========================================
-// PROMISES - Basic Practice
-// ========================================
-
 // 1. Creating a Simple Promise
 let myPromise = new Promise(function(resolve, reject) {
   let success = true;
